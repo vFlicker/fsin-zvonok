@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include viewport--xl {
+    max-width: 970px;
+  }
+
+  @include viewport--lg {
+    max-width: 680px;
+  }
+
+  @include viewport--md {
+    padding: 0 20px;
+  }
+}

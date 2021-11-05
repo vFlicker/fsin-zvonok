@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+
+
+  @include viewport--lg {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+  margin-right: 48px;
+
+  @include viewport--lg {
+    margin-right: auto;
+  }
+}

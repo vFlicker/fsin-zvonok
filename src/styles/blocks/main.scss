@@ -1,0 +1,34 @@
+.main {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+
+  aside,
+  section {
+    z-index: 1;
+  }
+
+  &--index {
+    margin-top: 70px;
+  }
+
+  &--page {
+    margin-top: 70px;
+    padding-top: 30px;
+  }
+
+  &--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--home {
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  &--admin {
+    padding-top: 30px;
+  }
+}

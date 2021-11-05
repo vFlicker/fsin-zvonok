@@ -1,0 +1,51 @@
+.dropdown {
+  display: flex;
+  align-items: center;
+  width: 225px;
+  min-height: 70px;
+  padding: 20px 28px;
+  position: relative;
+
+  &:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #515151;
+    color: #fff;
+  }
+}
+
+.dropdown__inner {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  top: calc(100% + 1px);
+  left: 0;
+
+  background-color: #515151;
+
+  z-index: 1;
+
+  .dropdown:hover & {
+    display: block;
+  }
+}
+
+.dropdown__phone {
+  font-size: 18px;
+  font-weight: 600;
+
+  .dropdown:hover & {
+    color: #fff;
+  }
+}
+
+.dropdown__address {
+  margin: 20px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.dropdown__button {
+  width: 100%;
+}

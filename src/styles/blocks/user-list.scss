@@ -1,0 +1,25 @@
+.user-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include viewport--lg {
+    flex-direction: column;
+  }
+}
+
+.user-list__dropdown {
+  margin-right: 4px;
+
+  @include viewport--xl {
+    display: none;
+  }
+}
+
+.user-list__button {
+  padding: 6px 20px;
+
+  @include viewport--lg {
+    display: none;
+  }
+}

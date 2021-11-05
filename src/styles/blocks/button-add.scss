@@ -1,0 +1,30 @@
+.button-add {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background-color: #4487c6;
+  background-image: url('../img/plus.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+
+  span {
+    display: none;
+    padding: 12px 15px;
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 22px);
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12px;
+    background-color: #515151;
+    transform: translateY(-50%);
+  }
+
+  &:hover span {
+    display: block;
+  }
+}

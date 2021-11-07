@@ -1,0 +1,81 @@
+.slide-third__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.slide-third__title {
+  margin: 0 0 35px;
+  max-width: 710px;
+
+  @include viewport--lg {
+    max-width: 600px;
+    margin: 0px 0 46px;
+  }
+
+  @include viewport--sm {
+    margin: 0 0 20px;
+    line-height: 140%;
+  }
+}
+
+.slide-third__contacts {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 36px;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
+}
+
+.slide-third__phone {
+  margin-right: 36px;
+}
+
+.slide-third__inner {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+
+  @include viewport--sm {
+    margin: 0 0 16px 0;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.slide-third__sub-title {
+  display: none;
+
+  @include viewport--lg {
+    display: block;
+    margin-bottom: 10px;
+    font-family: $font-family--ibm;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+}
+
+.slide-third__text {
+  margin: 0;
+  font-family: $font-family--ibm;
+  font-size: 20px;
+
+  @include viewport--lg {
+    font-size: 14px;
+  }
+
+  @include viewport--sm {
+    font-size: 13px;
+    line-height: 160%;
+  }
+}
+
+.slide-third__map {
+  height: 100%;
+  background-color: rgb(236, 236, 236);
+}

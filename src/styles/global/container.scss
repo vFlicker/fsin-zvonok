@@ -1,4 +1,6 @@
 .container {
+  position: relative;
+
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -8,10 +10,14 @@
   }
 
   @include viewport--lg {
-    max-width: 680px;
+    max-width: 690px;
   }
 
   @include viewport--md {
     padding: 0 20px;
+  }
+
+  @include viewport--sm {
+    padding: 0 14px;
   }
 }

@@ -1,0 +1,63 @@
+.line-1,
+.line-2,
+.line-3 {
+  width: 110px;
+  position: absolute;
+  transform: skew(45deg);
+  z-index: 0;
+}
+
+
+.line-2,
+.line-3 {
+  @include viewport--lg {
+    display: none;
+  }
+}
+
+.line-1 {
+  height: 280px;
+  top: -79px;
+  right: 180px;
+  background-color: $blue;
+
+  @include viewport--lg {
+    right: -150px;
+    top: 263px;
+  }
+
+  &--left {
+    right: 510px;
+
+    @include viewport--lg {
+      display: none;
+    }
+  }
+
+  @include viewport--sm {
+    display: none;
+  }
+}
+
+.line-2 {
+  height: 1000px;
+  top: -616px;
+  left: -690px;
+  background-color: $blue;
+
+  &--long {
+    top: -300px;
+    left: -590px;
+  }
+}
+
+.line-3 {
+  height: 1000px;
+  top: 384px;
+  right: -700px;
+  background-color: $active;
+
+  &.blue {
+    background-color: $blue;
+  }
+}

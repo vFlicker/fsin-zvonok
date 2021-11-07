@@ -10,11 +10,19 @@
 
   &--index {
     margin-top: 70px;
+
+    @include viewport--sm {
+      margin-top: 40px;
+    }
   }
 
   &--page {
     margin-top: 70px;
     padding-top: 30px;
+
+    @include viewport--sm {
+      margin-top: 40px;
+    }
   }
 
   &--login {

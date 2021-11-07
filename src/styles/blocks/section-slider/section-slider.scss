@@ -1,0 +1,23 @@
+.section-slider {
+  width: 100%;
+}
+
+.section-slider__container {
+  height: 100%;
+}
+
+.section-slider__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 100px;
+  position: relative;
+
+  @include viewport--lg {
+    padding-top: 48px;
+  }
+
+  @include viewport--sm {
+    padding-top: 30px;
+  }
+}

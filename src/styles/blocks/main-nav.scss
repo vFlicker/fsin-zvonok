@@ -24,6 +24,10 @@
     box-sizing: content-box;
     user-select: none;
   }
+
+  @include viewport--sm {
+    margin: 0px 14px 0 -10px;
+  }
 }
 
 .main-nav__toggle > span {
@@ -83,10 +87,10 @@
   width: 100%;
   z-index: 10;
 
-  @include viewport--lg {
-    .main-nav--open & {
+  .main-nav--open & {
+    @include viewport--lg {
       position: fixed;
-      top: 75px;
+      top: 63px;
       bottom: 0;
       left: 0;
       right: 0;
@@ -99,6 +103,10 @@
 
       overflow-x: hidden;
       overflow-y: auto;
+    }
+
+    @include viewport--sm {
+      top: 47px;
     }
   }
 }

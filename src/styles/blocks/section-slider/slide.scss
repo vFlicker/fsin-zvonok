@@ -1,0 +1,76 @@
+.slide {
+  display: none;
+  height: 100%;
+  font-weight: 400;
+}
+
+.slide--active {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide__name {
+  margin-bottom: 37px;
+  font-family: $font-family--ibm;
+  font-size: 20px;
+  line-height: 130%;
+
+  @include viewport--lg {
+    margin-bottom: 44px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 18px;
+  }
+}
+
+.slide__name span {
+  margin-right: 12px;
+  padding-right: 10px;
+  position: relative;
+  color: #4487c6;
+  font-weight: 500;
+
+  &::after {
+    content: '';
+    width: 2px;
+    height: 22px;
+    margin-top: -11px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    background-color: #4487c6;
+  }
+}
+.slide__content {
+  height: 100%;
+
+  @include viewport--sm {
+    padding-top: 24px;
+  }
+
+  &--line {
+    position: relative;
+    padding-top: 58px;
+
+    @include viewport--sm {
+      padding-top: 30px;
+    }
+
+    &::before {
+      content: '';
+      width: 70px;
+      height: 2px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #4487c6;
+
+      @include viewport--sm {
+        width: 120%;
+        left: -10%;
+        background-color: #d2d3d5;
+      }
+    }
+  }
+}

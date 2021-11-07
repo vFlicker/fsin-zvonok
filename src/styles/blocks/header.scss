@@ -10,11 +10,16 @@
   display: flex;
   align-items: center;
 
-
   @include viewport--lg {
     flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+
+  @include viewport--sm{
+    padding-bottom: 6px;
+    padding-top: 6px;
   }
 }
 
@@ -24,5 +29,10 @@
 
   @include viewport--lg {
     margin-right: auto;
+  }
+
+  @include viewport--sm {
+    width: 185px;
+    height: 22px;
   }
 }

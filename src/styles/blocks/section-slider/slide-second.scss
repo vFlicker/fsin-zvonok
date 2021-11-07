@@ -1,0 +1,139 @@
+.slide-second__content {
+  margin-bottom: 80px;
+
+  @include viewport--lg {
+    margin-bottom: 40px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 26px;
+  }
+}
+
+.slide-second__list {
+  @include reset-list;
+
+  display: flex;
+  gap: 20px 75px;
+
+  @include viewport--lg {
+    flex-direction: column;
+    gap: 35px 0;
+  }
+
+  @include viewport--sm {
+    flex-direction: column;
+    gap: 15px 0;
+  }
+}
+
+.slide-second__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+  @include viewport--lg {
+    max-width: 530px;
+    padding-left: 50px;
+  }
+
+  @include viewport--sm {
+    padding-left: 0;
+  }
+}
+
+.slide-second__title {
+  margin: 0 0 35px;
+  max-width: 744px;
+
+  @include viewport--lg {
+    margin: 0 0 50px;
+  }
+
+  @include viewport--sm {
+    width: 280px;
+    margin: 0 0 20px;
+    line-height: 140%;
+  }
+}
+
+.slide-second__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 26px;
+  position: relative;
+  border: 2px solid #d2d3d5;
+  border-radius: 50%;
+
+  @include viewport--lg {
+    position: absolute;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    border: 0;
+  }
+
+  @include viewport--sm {
+    display: none;
+  }
+}
+
+.slide-second__img-wrapper--gray::before,
+.slide-second__img-wrapper--blue::before {
+  content: '';
+  width: 70px;
+  height: 35px;
+  position: absolute;
+  left: -2px;
+
+  @include viewport--lg {
+    content: none;
+  }
+}
+
+.slide-second__img-wrapper--gray::before {
+  top: -2px;
+  border-radius: 70px 70px 0 0;
+  border: 2px solid #515151;
+  border-bottom: none;
+
+  @include viewport--lg {
+    border-radius: 44px 44px 0 0;
+  }
+}
+
+.slide-second__img-wrapper--blue::before {
+  bottom: -2px;
+  border-radius: 0 0 70px 70px;
+  border: 2px solid #4487c6;
+  border-top: none;
+}
+
+.slide-second__name {
+  margin-bottom: 12px;
+  font-family: $font-family--ibm;
+  font-size: 20px;
+  font-weight: 400;
+  color: #454545;
+
+  @include viewport--lg {
+    font-weight: 500;
+  }
+}
+
+.slide-second__text {
+  margin: 0;
+  color: #454545;
+  font-weight: 400;
+  line-height: 175%;
+
+  @include viewport--sm {
+    font-size: 13px;
+    line-height: 160%;
+  }
+}

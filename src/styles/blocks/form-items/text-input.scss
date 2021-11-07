@@ -1,0 +1,27 @@
+.text-input {
+  position: relative;
+  padding-top: 30px;
+}
+
+.text-input__input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px 30px 12px 10px;
+  border: 0;
+  background-color: #f5f5f5;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #f1f1f1;
+    outline: none;
+  }
+}
+
+.text-input__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: rgba(69, 69, 69, 0.7);
+}

@@ -2,6 +2,11 @@
   display: flex;
   min-height: 66px;
 
+
+  @include viewport--md {
+    margin: 0px -14px;
+  }
+
   @include viewport--sm {
     min-height: 44px;
   }
@@ -46,7 +51,7 @@
   color: #454545;
   background-color: #fff;
 
-  &:disabled {
+  &--disabled {
     color: #c5c5c5;
     background-color: #ececec;
     cursor: not-allowed;

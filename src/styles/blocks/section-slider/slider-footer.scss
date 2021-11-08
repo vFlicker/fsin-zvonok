@@ -51,7 +51,7 @@
   color: #454545;
   background-color: #fff;
 
-  &--disabled {
+  &:disabled {
     color: #c5c5c5;
     background-color: #ececec;
     cursor: not-allowed;

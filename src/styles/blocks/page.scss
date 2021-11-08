@@ -2,6 +2,12 @@
   margin-top: 70px;
   padding-top: 30px;
 
+  @include viewport--lg {
+    margin-top: 32px;
+
+    background-color: #fff;
+  }
+
   @include viewport--sm {
     margin-top: 40px;
   }

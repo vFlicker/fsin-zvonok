@@ -1,4 +1,4 @@
-const slider = document.querySelector('.section-slider');
+const slider = document.querySelector('.slider');
 
 if (slider) {
   const slides = slider.querySelectorAll('.slide');

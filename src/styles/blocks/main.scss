@@ -2,36 +2,4 @@
   flex-grow: 1;
   display: flex;
   position: relative;
-
-  &--index {
-    margin-top: 70px;
-
-    @include viewport--sm {
-      margin-top: 40px;
-    }
-  }
-
-  &--page {
-    margin-top: 70px;
-    padding-top: 30px;
-
-    @include viewport--sm {
-      margin-top: 40px;
-    }
-  }
-
-  &--login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &--home {
-    justify-content: center;
-    padding-top: 30px;
-  }
-
-  &--admin {
-    padding-top: 30px;
-  }
 }

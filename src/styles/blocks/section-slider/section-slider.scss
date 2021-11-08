@@ -1,5 +1,10 @@
 .section-slider {
   width: 100%;
+  margin-top: 70px;
+
+  @include viewport--sm {
+    margin-top: 40px;
+  }
 }
 
 .section-slider__container {

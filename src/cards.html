@@ -57,7 +57,7 @@
       </div>
     </header>
 
-    <main class="main  main--page">
+    <main class="main page">
       <div class="page__container container">
         <div class="line-1 line-1--left"></div>
         <div class="line-2 line-2--long"></div>
@@ -80,148 +80,60 @@
           </ul>
         </aside>
 
-        <section class="page__content section-cards">
-          <div class="section-cards__search  search">
+        <section class="page__section">
+          <div class="search">
             <input class="search__input" type="text" name="search" placeholder="Поиск">
             <button class="search__filter" disabled>Сортировать</button>
           </div>
 
-          <div class="page__content-inner  page__content-inner--separator">
-            <div class="section-cards__spoiler cards-spoiler">
-              <div class="cards-spoiler__header spoiler-header  spoiler-header--active">
-                <h3 class="cards-spoiler__title">№ 07484100</h3>
+          <div class="page__content">
+            <div class="cards">
+              <div class="card">
+                <div class="card__header card__header--active">
+                  <h3 class="card__title">№ 07484100</h3>
 
-                <button class="button-remove spoiler-header__button">
-                  Удалить карточку
-                </button>
-              </div>
+                  <button class="card__remove-button">
+                    <span class="visually-hidden">Удалить карточку</span>
+                  </button>
+                </div>
 
-              <div class="cards-spoiler__content  cards-spoiler__content--active">
-                <table class="cards-spoiler__table table-card">
-                  <tbody>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Тип:</е>
-                      <td class="table-card__text">Абонентская</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Баланс:</е>
-                      <td class="table-card__text">439,03 ₽</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Срок действия</е>
-                      <td class="table-card__text">24 Августа 2019</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Принадлежит</е>
-                      <td class="table-card__text">Илья Федоров П.</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Пин-код</е>
-                      <td class="table-card__text">*******</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="card__content  card__content--active">
+                  <table class="card__table">
+                    <tbody>
+                      <tr class="card__tr">
+                        <th class="card__th">Тип:</е>
+                        <td class="card__td">Абонентская</td>
+                      </tr>
+                      <tr class="card__tr">
+                        <th class="card__th">Баланс:</е>
+                        <td class="card__td">439,03 ₽</td>
+                      </tr>
+                      <tr class="card__tr">
+                        <th class="card__th">Срок действия</е>
+                        <td class="card__td">24 Августа 2019</td>
+                      </tr>
+                      <tr class="card__tr">
+                        <th class="card__th">Принадлежит</е>
+                        <td class="card__td">Илья Федоров П.</td>
+                      </tr>
+                      <tr class="card__tr">
+                        <th class="card__th">Пин-код</е>
+                        <td class="card__td">*******</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                <div class="cards-spoiler__buttons">
-                  <button class="button cards-spoiler__button">Пополнить карту</button>
-                  <button class="button cards-spoiler__button button--grey">Купить новую</button>
+                  <div class="card__buttons">
+                    <button class="button card__button">Пополнить карту</button>
+                    <button class="button card__button button--grey">Купить новую</button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- <div class="section-cards__spoiler cards-spoiler">
-              <div class="cards-spoiler__header spoiler-header">
-                <h3 class="cards-spoiler__title">№ 07484100</h3>
-
-                <button class="button-remove
-                  spoiler-header__button
-                  spoiler-header__button--active">
-                  Удалить карточку
-                </button>
-              </div>
-
-              <div class="cards-spoiler__content">
-                <table class="cards-spoiler__table table-card">
-                  <tbody>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Тип:</е>
-                      <td class="table-card__text">Абонентская</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Баланс:</е>
-                      <td class="table-card__text">439,03 ₽</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Срок действия</е>
-                      <td class="table-card__text">24 Августа 2019</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Принадлежит</е>
-                      <td class="table-card__text">Илья Федоров П.</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Пин-код</е>
-                      <td class="table-card__text">*******</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <div class="cards-spoiler__buttons">
-                  <button class="button cards-spoiler__button">Пополнить карту</button>
-                  <button class="button cards-spoiler__button button--grey">Купить новую</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="section-cards__spoiler cards-spoiler">
-              <div class="cards-spoiler__header spoiler-header">
-                <h3 class="cards-spoiler__title">№ 07484100</h3>
-
-                <button class="button-remove
-                  spoiler-header__button
-                  spoiler-header__button--active">
-                  Удалить карточку
-                </button>
-              </div>
-
-              <div class="cards-spoiler__content">
-                <table class="cards-spoiler__table table-card">
-                  <tbody>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Тип:</е>
-                      <td class="table-card__text">Абонентская</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Баланс:</е>
-                      <td class="table-card__text">439,03 ₽</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Срок действия</е>
-                      <td class="table-card__text">24 Августа 2019</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Принадлежит</е>
-                      <td class="table-card__text">Илья Федоров П.</td>
-                    </tr>
-                    <tr class="table-card__row">
-                      <th class="table-card__title">Пин-код</е>
-                      <td class="table-card__text">*******</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <div class="cards-spoiler__buttons">
-                  <button class="button cards-spoiler__button">Пополнить карту</button>
-                  <button class="button cards-spoiler__button button--grey">Купить новую</button>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="button-add__wrapper">
-              <button class="button-add section-cards__button-add">
-                <span>Добавить карту</span>
-              </button>
-            </div>
+            <button class="card__add">
+              <span>Добавить карту</span>
+            </button>
           </div>
         </section>
       </div>

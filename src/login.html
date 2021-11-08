@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Описание сайта">
+
+  <title>ФСИН-Звонок — вход</title>
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <main class="main login">
+      <section class="login__section">
+        <div class="login__container container">
+          <h3 class="login__title">Вход для сотрудников</h3>
+
+          <div class="login__content">
+            <ul class="login__list">
+              <li class="login__text-input text-input">
+                <input class="text-input__input" id="login" type="text" name="login">
+                <label class="text-input__label" for="login">Логин</label>
+              </li>
+
+              <li class="login__text-input text-input">
+                <input class="text-input__input" id="password" type="password" name="password">
+                <label class="text-input__label" for="password">Пароль</label>
+              </li>
+            </ul>
+
+            <div class="login__inner">
+              <button class="button">Войти</button>
+
+              <div class="login__checkbox-input checkbox-input">
+                <input class="checkbox-input__input visually-hidden" id="resolution" type="checkbox" name="resolution">
+                <label class="checkbox-input__label" for="resolution">Запомнить меня</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="login__footer">
+            <button class="login__button login__button--back">Вернуться на сайт</button>
+            <button class="login__button">Забыл пароль</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

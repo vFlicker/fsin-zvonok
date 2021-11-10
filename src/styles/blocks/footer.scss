@@ -86,7 +86,13 @@
   top: -2px;
 
   margin-right: 20px;
-  user-select: none;
+
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.4;
+  }
 
   &:last-child {
     margin-right: 0;

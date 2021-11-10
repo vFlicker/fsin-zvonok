@@ -1,6 +1,6 @@
 .page {
-  margin-top: 70px;
-  padding-top: 30px;
+  margin-top: 60px;
+  padding-top: 41px;
 
   @include viewport--lg {
     margin-top: 32px;
@@ -9,7 +9,7 @@
   }
 
   @include viewport--sm {
-    margin-top: 40px;
+    margin-top: 4px;
   }
 }
 
@@ -29,7 +29,7 @@
 
 .page__content {
   position: relative;
-  padding: 40px 70px 50px;
+  padding: 0 70px;
   overflow: hidden;
 
   @include viewport--lg {

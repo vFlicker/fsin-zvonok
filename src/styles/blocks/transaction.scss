@@ -1,6 +1,10 @@
 .transaction {
   position: relative;
-  padding-bottom: 40px;
+  padding: 36px 0 50px;
+
+  @include viewport--sm {
+    padding: 22px 0 50px;
+  }
 
   &::after {
     content: '';
@@ -15,19 +19,36 @@
   }
 }
 
+.transaction__header {
+  margin-bottom: 30px;
+  padding-bottom: 29px;
+
+  @include viewport--sm {
+    padding-bottom: 22px;
+  }
+}
+
 .transaction__title {
-  margin: 0 0 40px;
-  padding-bottom: 28px;
+  margin: 0;
   position: relative;
+
+  @include viewport--sm {
+    font-size: 24px;
+    line-height: 140%;
+  }
 
   &::after {
     content: '';
     width: 40px;
     height: 2px;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: $blue;
+    bottom: -29px;
+    left: 2px;
+    background-color: #4487c6;
+
+    @include viewport--sm {
+      bottom: -22px;
+    }
   }
 }
 
@@ -40,8 +61,20 @@
   display: flex;
   align-items: center;
 
+  @include viewport--sm {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
   &:nth-child(odd) {
-    background-color: $bg-input;
+    background-color: #f5f5f5;
+  }
+
+  &:nth-child(even) {
+    @include viewport--sm {
+      background-color: #fdfdfd;
+    }
   }
 }
 
@@ -50,7 +83,13 @@
   margin-right: 8%;
   padding: 8px 0 34px 14px;
   font-weight: 500;
-  opacity: 0.6;
+  color: rgba(69, 69, 69, 0.6);
+
+  @include viewport--sm {
+    flex-basis: auto;
+    margin: 0 0 2px 0;
+    padding: 0;
+  }
 }
 
 .transaction__td {
@@ -59,16 +98,33 @@
   &:nth-child(2) {
     flex: 1 1 auto;
     margin-right: 8%;
+
+    @include viewport--sm {
+      flex-basis: auto;
+      margin: 0 0 2px 0;
+      padding: 0;
+    }
   }
 
   &:nth-child(3) {
     flex: 0 0 90px;
     margin-right: 6%;
-    opacity: 0.6;
+    color: rgba(69, 69, 69, 0.6);
+
+    @include viewport--sm {
+      flex-basis: auto;
+      margin: 0 0 2px 0;
+      padding: 0;
+    }
   }
 
-  &:nth-child(4) {
+  &:last-child {
     flex: 0 0 85px;
     text-align: right;
+
+    @include viewport--sm {
+      flex-basis: auto;
+      padding: 0;
+    }
   }
 }

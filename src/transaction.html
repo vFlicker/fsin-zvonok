@@ -14,9 +14,14 @@
     <header class="header">
       <div class="header__container  container">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" aria-label="Переключатель отображения меню"><span></span></button>
+          <picture class="header__logo-wrapper">
+            <source media="(max-width: 575px)" srcset="./img/logo-dark.svg" width="186" height="22">
+            <img class="header__logo" src="./img/logo.svg" alt="ФСИН-Звонок" width="240" height="29">
+          </picture>
 
-          <img class="header__logo" src="./img/logo.svg" alt="ФСИН-Звонок" width="240" height="29">
+          <div class="main-nav__toggle-wrapper">
+            <button class="main-nav__toggle" type="button" aria-label="Переключатель отображения меню"><span></span></button>
+          </div>
 
           <div class="main-nav__inner">
             <ul class="main-nav__item  site-list">
@@ -34,6 +39,9 @@
               </li>
               <li class="site-list__item only-lg">
                 <a class="site-list__link" href="#">Личный кабинет</a>
+              </li>
+              <li class="site-list__item only-lg">
+                <a class="site-list__link" href="tel:+79218616131">+7 (921) 861-61-31</a>
               </li>
             </ul>
 
@@ -89,7 +97,9 @@
           <div class="page__content">
             <div class="transactions">
               <div class="transaction">
-                <h3 class="transaction__title">Январь 2021</h3>
+                <div class="transaction__header">
+                  <h3 class="transaction__title">Январь 2021</h3>
+                </div>
 
                 <table class="transaction__table">
                   <tbody>

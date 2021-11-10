@@ -4,32 +4,29 @@
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   z-index: 10;
+
+  @include viewport--sm {
+    background-color: #515151;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
+}
+
+.header__logo-wrapper {
+  margin-right: 48px;
+  flex-shrink: 0;
 
   @include viewport--lg {
-    flex-direction: column;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-
-
-  @include viewport--sm{
-    padding-bottom: 6px;
-    padding-top: 6px;
+    margin-right: 0;
   }
 }
 
 .header__logo {
-  flex-shrink: 0;
-  margin-right: 48px;
-
-  @include viewport--lg {
-    margin-right: auto;
-  }
+  width: 240px;
+  height: 29px;
 
   @include viewport--sm {
     width: 185px;

@@ -1,5 +1,5 @@
 .checkbox-input {
-  line-height: 20px;
+  line-height: 16px;
 }
 
 .checkbox-input__input + .checkbox-input__label {
@@ -19,17 +19,18 @@
 
     width: 20px;
     height: 20px;
-    border: 2px solid rgba(69, 69, 69, 0.7);
+    border-radius: 50%;
+    background-color: #515151;
   }
 }
 
 .checkbox-input__input:checked + .checkbox-input__label::after {
   content: '';
-  width: 12px;
-  height: 8px;
+  width: 9px;
+  height: 6.5px;
   position: absolute;
-  top: 7px;
-  left: 4px;
+  top: 8px;
+  left: 5.5px;
   background-image: url('../img/check.svg');
   background-size: cover;
 }

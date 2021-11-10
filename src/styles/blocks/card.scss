@@ -1,6 +1,10 @@
 .card {
   position: relative;
-  padding-bottom: 40px;
+  padding: 36px 0 40px;
+
+  @include viewport--sm {
+    padding: 22px 0 27px;
+  }
 
   &::after {
     content: '';
@@ -13,12 +17,20 @@
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+  &--active {
+    padding: 36px 0 50px;
+
+    @include viewport--sm {
+      padding: 22px 0 50px;
+    }
+  }
 }
 
 .card__content {
   display: none;
 
-  &--active {
+  .card--active & {
     display: block;
   }
 }
@@ -26,11 +38,16 @@
 .card__header {
   margin: 0;
 
-  &--active {
+  .card--active & {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 70px;
+    margin-bottom: 30px;
+    padding-bottom: 29px;
+
+    @include viewport--sm {
+      padding-bottom: 22px;
+    }
   }
 }
 
@@ -38,7 +55,12 @@
   margin: 0;
   cursor: pointer;
 
-  .card__header--active & {
+  @include viewport--sm {
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .card--active & {
     margin: 0;
     position: relative;
 
@@ -47,9 +69,13 @@
       width: 40px;
       height: 2px;
       position: absolute;
-      bottom: -28px;
-      left: 0;
+      bottom: -29px;
+      left: 2px;
       background-color: #4487c6;
+
+      @include viewport--sm {
+        bottom: -22px;
+      }
     }
   }
 }
@@ -66,7 +92,7 @@
   background-position: center center;
   cursor: pointer;
 
-  .card__header--active & {
+  .card--active & {
     display: block;
   }
 }
@@ -75,40 +101,75 @@
   margin-bottom: 50px;
   width: 100%;
   border-collapse: collapse;
+
+  @include viewport--sm {
+    margin-bottom: 40px;
+  }
 }
 
 .card__tr {
   display: flex;
   align-items: center;
 
+  @include viewport--sm {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
   &:nth-child(odd) {
-    background-color: $bg-input;
+    background-color: #f5f5f5;
+  }
+
+  &:nth-child(even) {
+    @include viewport--sm {
+      background-color: #fdfdfd;
+    }
   }
 }
 
 .card__th {
   flex-basis: 170px;
-  margin-right: 40px;
-  padding: 12px 0 12px 14px;
+  margin: 0 40px 0 0;
+  padding: 10px 0 10px 14px;
   text-align: right;
   font-weight: 500;
-  opacity: 0.6;
+  color: rgba(69, 69, 69, 0.6);
+
+  @include viewport--sm {
+    flex-basis: auto;
+    margin: 0 0 2px 0;
+    padding: 0;
+  }
 }
 
 .card__td {
   flex-grow: 1;
-  padding: 12px 14px 12px 0;
+  padding: 10px 14px 10px 0;
+
+  @include viewport--sm {
+    padding: 0;
+  }
 }
 
 .card__buttons {
   display: flex;
+
+  @include viewport--sm {
+    flex-direction: column;
+  }
 }
 
 .card__button {
-  margin-right: 30px;
+  margin: 0 30px 0 0;
+
+  @include viewport--sm {
+    width: 100%;
+    margin: 0 0 12px 0;
+  }
 
   &:last-child {
-    margin-right: 0;
+    margin: 0;
   }
 }
 

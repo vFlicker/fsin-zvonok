@@ -1,12 +1,15 @@
 .search {
   position: relative;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
   padding: 0 30px;
   background-color: rgba(0, 0, 0, 0.04);
+
+  @include viewport--sm {
+    margin: 0 -20px;
+  }
 
   &::before {
     content: '';

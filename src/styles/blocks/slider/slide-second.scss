@@ -120,10 +120,6 @@
   font-size: 20px;
   font-weight: 400;
   color: #454545;
-
-  @include viewport--lg {
-    font-weight: 500;
-  }
 }
 
 .slide-second__text {

@@ -55,17 +55,19 @@
 
   @include viewport--sm {
     padding: 11px 14px 13px;
-    font-size: 16px;
-    line-height: 20px;
   }
 
-  &--disabled {
+  &:hover {
+    background-color: #fafafa;
+  }
+
+  &.aside__link--disabled {
     color: #c5c5c5;
     background-color: #ececec;
     cursor: not-allowed;
   }
 
-  &--active {
+  &.aside__link--active {
     width: 100%;
     box-shadow: -5px 0 0 #515151, -8px 0 0 #4487c6, 5px 0 0 #515151;
     color: #fff;

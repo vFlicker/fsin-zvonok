@@ -14,7 +14,7 @@
 
 .slider-footer__button {
   display: flex;
-  flex-basis: 356px;
+  flex-grow: 1;
   height: 100%;
   padding: 12px 14px;
   border: none;
@@ -29,11 +29,14 @@
     align-items: center;
     font-size: 16px;
   }
+
+  &:hover {
+    background-color: #4181bd;
+  }
 }
 
 .slider-footer__switchers {
   display: flex;
-  flex-grow: 1;
 
   @include viewport--lg {
     display: none;
@@ -41,8 +44,8 @@
 }
 
 .slider-footer__switchers .slider-footer__button {
-  flex-basis: 210px;
-  flex-grow: 1;
+  max-width: 210px;
+  min-width: 210px;
   flex-shrink: 0;
 
   display: flex;
@@ -51,22 +54,35 @@
   color: #454545;
   background-color: #fff;
 
+  &:hover {
+    background-color: #fafafa;
+  }
+
   &:disabled {
     color: #c5c5c5;
     background-color: #ececec;
     cursor: not-allowed;
+
+    @include viewport--xl {
+      display: none;
+    }
+
+    @include viewport--lg {
+      display: block;
+    }
   }
 
   &:last-child {
     margin-right: 0;
   }
 
-  &--active {
+  &.slider-footer__button--active {
     position: relative;
     padding: 6px 14px;
     color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px -5px 0 #515151, 0 -8px 0 #4487c6;
     background-color: #515151;
+    cursor: initial;
   }
 }
 

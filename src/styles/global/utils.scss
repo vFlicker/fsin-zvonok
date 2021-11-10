@@ -1,7 +1,6 @@
 .wrapper {
-  display: grid;
-  grid-template-rows: 1fr min-content;
-  grid-template-columns: 100%;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 
   background-image: url('../img/bg.png');

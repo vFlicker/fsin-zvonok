@@ -18,21 +18,23 @@
     background-color: #fafafa;
   }
 
-  &--active {
-    background-color: #fafafa;
-    box-shadow: 0px 3px 0 #4487c6;
-    pointer-events: none;
-  }
-
   &:last-child {
     margin-right: 0;
   }
 
-  @include viewport--lg {
-    &--active {
+  &--active {
+    background-color: #fafafa;
+    box-shadow: 0px 3px 0 #4487c6;
+    pointer-events: none;
+
+    @include viewport--lg {
       background-color: #fafafa;
       box-shadow: none;
     }
+  }
+
+  &--phone:hover {
+    background-color: transparent;
   }
 }
 
@@ -48,14 +50,19 @@
     margin: 0 auto;
     padding: 0;
     font-size: 20px;
-    min-height: 50px;
+    min-height: 55px;
 
     .site-list__item--active & {
       color: #4487c6;
     }
   }
 
-  @include viewport--md{
+  @include viewport--md {
     padding: 0 20px;
+  }
+
+  .site-list__item--phone & {
+    font-size: 22px;
+    font-weight: 700;
   }
 }

@@ -55,6 +55,7 @@ h2 {
 
   @include viewport--lg {
     font-size: 36px;
+    line-height: 140%;
   }
 
   @include viewport--sm {

@@ -1,0 +1,37 @@
+.header-admin__home {
+  color: #d2d3d5;
+  margin-right: 15px;
+}
+
+.header-admin__button {
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+  background-color: #515151;
+  border: none;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-admin__button--question {
+  opacity: 0.5;
+
+  &::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    display: inline-block;
+    background-image: url('../img/question.svg');
+  }
+}
+
+.header-admin__button--close::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-image: url('../img/close.svg');
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Описание сайта">
+
+  <title>ФСИН-Звонок — учреждения</title>
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body class="admin">
+  <div class="wrapper">
+    <header class="header-admin">
+      <div class="header-admin__container container">
+        <div class="header-admin__left">
+          <button class="header-admin__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="header-admin__toggle-line"></span>
+          </button>
+
+          <img class="header-admin__logo logo" src="./img/logo-dark.svg" alt="ФСИН-Звонок" width="250" height="30">
+        </div>
+
+        <div class="header-admin__right">
+          <a class="header-admin__home" href="./index.html">Открыть сайт</a>
+          <button class="header-admin__button  header-admin__button--question">
+            <span class="visually-hidden">Вопросы</span>
+          </button>
+          <button class="header-admin__button  header-admin__button--close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="admin__container container">
+        <div class="line-1"></div>
+        <div class="line-3 line-3--blue"></div>
+
+        <menu class="admin-menu">
+          <ul class="admin-menu__list">
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="22" height="18">
+                    <use xlink:href="img/sprite.svg#home"></use>
+                  </svg>
+                </span>
+                Главная
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link  admin-menu__link--active">
+                <span class="admin-menu__icon">
+                  <svg width="19" height="20">
+                    <use xlink:href="img/sprite.svg#institutions"></use>
+                  </svg>
+                </span>
+                Учреждения
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="19" height="17">
+                    <use xlink:href="img/sprite.svg#payphones"></use>
+                  </svg>
+                </span>
+                Таксофоны
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="14" height="17">
+                    <use xlink:href="img/sprite.svg#convicts"></use>
+                  </svg>
+                </span>
+                Осужденные
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="21" height="13">
+                    <use xlink:href="img/sprite.svg#cards"></use>
+                  </svg>
+                </span>
+                Карты
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="17" height="17">
+                    <use xlink:href="img/sprite.svg#calls"></use>
+                  </svg>
+                </span>
+                Звонки
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="15" height="17">
+                    <use xlink:href="img/sprite.svg#contacts"></use>
+                  </svg>
+                </span>
+                Контакты
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="12" height="17">
+                    <use xlink:href="img/sprite.svg#pages"></use>
+                  </svg>
+                </span>
+                Страницы
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="17" height="15">
+                    <use xlink:href="img/sprite.svg#headphones"></use>
+                  </svg>
+                </span>
+                ОКЗ
+              </a>
+            </li>
+            <li class="admin-menu__item">
+              <a href="#" class="admin-menu__link">
+                <span class="admin-menu__icon">
+                  <svg width="12" height="15">
+                    <use xlink:href="img/sprite.svg#statistics"></use>
+                  </svg>
+                </span>
+                Статистика
+              </a>
+            </li>
+          </ul>
+        </menu>
+
+        <section class="admin__content admin-content">
+          <div class="admin-content__header tab-header">
+            <button class="button tab-header__button">Список</button>
+            <button class="button tab-header__button  tab-header__button--active">Добавление осужденного</button>
+          </div>
+
+          <div class="admin-content__main">
+            <div class="admin-content__form admin-form">
+              <div class="admin-form__input-item input-item">
+                <input class="input-text" id="institution" type="text" name="institution">
+                <label class="input-item__label" for="institution">Учреждение</label>
+              </div>
+              <div class="admin-form__input-item input-item">
+                <input class="input-text" id="fullName" type="text" name="fullName">
+                <label class="input-item__label" for="fullName">ФИО</label>
+              </div>
+              <div class="admin-form__input-wraper">
+                <div class="admin-form__input-item input-item">
+                  <input class="input-text" id="dateOfBirth" type="text" name="dateOfBirth">
+                  <label class="input-item__label" for="dateOfBirth">Дата рождения</label>
+                </div>
+                <div class="admin-form__input-item input-item">
+                  <input class="input-text" id="squadNumber" type="text" name="squadNumber">
+                  <label class="input-item__label" for="squadNumber">Номер отряда</label>
+                </div>
+              </div>
+              <div class="admin-form__textarea-item textarea-item">
+                <textarea class="input-textarea" id="comment" name="comment"></textarea>
+                <label class="textarea-item__label" for="comment">Комментарий</label>
+              </div>
+              <div class="admin-form__checkbox-item checkbox-item">
+                <input class="visually-hidden input-checkbox" id="resolution" type="checkbox" name="resolution">
+                <label class="checkbox-item__label" for="resolution">Разрешить звонить только на добавленные
+                  контакты</label>
+              </div>
+
+              <button class="button button--fw">Добавить</button>
+            </div>
+
+            <div class="admin-content__apps admin-apps">
+              <div class="admin-content__app app app-map"></div>
+              <div class="admin-content__app app app-calls"></div>
+              <div class="admin-content__app app app-contacts"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__block  footer__block--left">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Документы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реквизиты</a>
+            </li>
+          </ul>
+          <p class="footer__text">Санкт-Петербург,&ensp;ул. Тележная 13В,&ensp;офис&nbsp;4</p>
+        </div>
+        <div class="footer__block  footer__block--right">
+          <div class="footer__social">
+            <a class="footer__social-link">
+              <img src="./img/ios.svg" alt="Приложение Айфон">
+            </a>
+            <a class="footer__social-link">
+              <img src="./img/android.svg" alt="Приложение Андроид">
+            </a>
+          </div>
+          <p class="footer__copy">&copy;&ensp;2021<span>,&ensp;ФСИН-Звонок</span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>

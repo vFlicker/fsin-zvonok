@@ -4,13 +4,14 @@
   align-items: center;
 }
 
-.login__container {
+.login__section {
+  width: 100%;
   max-width: 415px;
 }
 
 .login__title {
   margin: 0 0 40px 0;
-  padding-bottom: 28px;
+  padding-bottom: 29px;
   position: relative;
 
   &::after {
@@ -19,8 +20,8 @@
     height: 2px;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: $blue;
+    left: 2px;
+    background-color: #4487c6;
   }
 }
 
@@ -28,6 +29,10 @@
   margin-bottom: 24px;
   padding: 44px 50px 50px 50px;
   background-color: #fff;
+
+  @include viewport--sm {
+    padding: 30px 24px 40px;
+  }
 }
 
 .login__list {
@@ -39,10 +44,14 @@
   margin-bottom: 24px;
 }
 
-.login__inner {
+.login__actions {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.login__button {
+  margin-right: 30px;
+  letter-spacing: -0.02em;
 }
 
 .login__footer {
@@ -51,10 +60,15 @@
   align-items: center;
 }
 
-.login__button {
+.login__link {
   border: none;
+  color: rgba(131, 131, 131);
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    color: rgba(131, 131, 131, 0.8);
+  }
 
   &--back {
     padding-left: 14px;

@@ -1,0 +1,36 @@
+.button-add {
+  position: relative;
+
+  min-width: 134px;
+  padding: 6px 28px 6px 9px;
+  border: 1px solid #dbdbdb;
+  color: #7a7a7a;
+  font-weight: 500;
+  font-size: 11px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: #ababab;
+  }
+
+  &::after {
+    top: 11px;
+    right: 11px;
+  }
+
+  &::before {
+    top: 11px;
+    right: 11px;
+    transform: rotate(90deg);
+  }
+}

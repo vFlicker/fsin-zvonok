@@ -35,10 +35,10 @@
 
     <main class="main">
       <div class="admin__container container">
-        <div class="line-1"></div>
+        <div class="line-1 line-1--admin "></div>
         <div class="line-3 line-3--blue"></div>
 
-        <nav class="admin-menu">
+        <nav class="admin-menu  admin-menu--active">
           <ul class="admin-menu__list">
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
@@ -49,6 +49,7 @@
                 </span>
                 Главная
               </a>
+
             </li>
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link  admin-menu__link--active">
@@ -60,6 +61,7 @@
                 Учреждения
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -70,6 +72,7 @@
                 Таксофоны
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -80,6 +83,7 @@
                 Осужденные
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -90,6 +94,7 @@
                 Карты
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -100,6 +105,7 @@
                 Звонки
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -110,6 +116,7 @@
                 Контакты
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -120,6 +127,7 @@
                 Страницы
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -130,6 +138,7 @@
                 ОКЗ
               </a>
             </li>
+
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
                 <span class="admin-menu__icon">
@@ -143,49 +152,53 @@
           </ul>
         </nav>
 
-        <section class="admin__content admin-content">
-          <div class="admin-content__header tab-header">
-            <button class="button tab-header__button">Список</button>
-            <button class="button tab-header__button  tab-header__button--active">Добавление осужденного</button>
+        <section class="admin__content content-admin">
+          <div class="content-admin__header">
+            <button class="content-admin__tab">Список</button>
+            <button class="content-admin__tab content-admin__tab--active">Добавление осужденного</button>
           </div>
 
-          <div class="admin-content__main">
-            <div class="admin-content__form admin-form">
-              <div class="admin-form__input-item input-item">
-                <input class="input-text" id="institution" type="text" name="institution">
-                <label class="input-item__label" for="institution">Учреждение</label>
-              </div>
-              <div class="admin-form__input-item input-item">
-                <input class="input-text" id="fullName" type="text" name="fullName">
-                <label class="input-item__label" for="fullName">ФИО</label>
-              </div>
-              <div class="admin-form__input-wraper">
-                <div class="admin-form__input-item input-item">
-                  <input class="input-text" id="dateOfBirth" type="text" name="dateOfBirth">
-                  <label class="input-item__label" for="dateOfBirth">Дата рождения</label>
-                </div>
-                <div class="admin-form__input-item input-item">
-                  <input class="input-text" id="squadNumber" type="text" name="squadNumber">
-                  <label class="input-item__label" for="squadNumber">Номер отряда</label>
-                </div>
-              </div>
-              <div class="admin-form__textarea-item textarea-item">
-                <textarea class="input-textarea" id="comment" name="comment"></textarea>
-                <label class="textarea-item__label" for="comment">Комментарий</label>
-              </div>
-              <div class="admin-form__checkbox-item checkbox-item">
-                <input class="visually-hidden input-checkbox" id="resolution" type="checkbox" name="resolution">
-                <label class="checkbox-item__label" for="resolution">Разрешить звонить только на добавленные
-                  контакты</label>
+          <div class="content-admin__main">
+            <form action="" class="content-admin__form">
+              <div class="content-admin__text-input text-input">
+                <input class="text-input__input" id="institution" type="text" name="institution">
+                <label class="text-input__label" for="institution">Учреждение</label>
               </div>
 
-              <button class="button button--fw">Добавить</button>
-            </div>
+              <div class="content-admin__text-input text-input">
+                <input class="text-input__input" id="fullName" type="text" name="fullName">
+                <label class="text-input__label" for="fullName">ФИО</label>
+              </div>
 
-            <div class="admin-content__apps admin-apps">
-              <div class="admin-content__app app app-map"></div>
-              <div class="admin-content__app app app-calls"></div>
-              <div class="admin-content__app app app-contacts"></div>
+              <div class="content-admin__row">
+                <div class="content-admin__text-input text-input">
+                  <input class="text-input__input" id="dateOfBirth" type="text" name="dateOfBirth">
+                  <label class="text-input__label" for="dateOfBirth">Дата рождения</label>
+                </div>
+
+                <div class="content-admin__text-input text-input">
+                  <input class="text-input__input" id="squadNumber" type="text" name="squadNumber">
+                  <label class="text-input__label" for="squadNumber">Номер отряда</label>
+                </div>
+              </div>
+
+              <div class="content-admin__textarea-input textarea-input">
+                <textarea class="textarea-input__textarea" id="comment" name="comment"></textarea>
+                <label class="textarea-input__label" for="comment">Комментарий</label>
+              </div>
+
+              <div class="content-admin__checkbox-input checkbox-input">
+                <input class="checkbox-input__input visually-hidden" id="resolution" type="checkbox" name="resolution">
+                <label class="checkbox-input__label" for="resolution">Разрешить звонить только на&nbsp;добавленные контакты</label>
+              </div>
+
+              <button class="content-admin__button button" type="submit">Добавить</button>
+            </form>
+
+            <div class="app-list">
+              <div class="app-item app-item--map"></div>
+              <div class="app-item app-item--calls"></div>
+              <div class="app-item app-item--contacts"></div>
             </div>
           </div>
         </section>
@@ -220,6 +233,6 @@
     </footer>
   </div>
 
-  <script src="js/script.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 </html>

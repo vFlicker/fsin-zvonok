@@ -7,7 +7,6 @@
   z-index: 0;
 }
 
-
 .line-2,
 .line-3 {
   @include viewport--lg {
@@ -17,7 +16,7 @@
 
 .line-1 {
   height: 280px;
-  top: -79px;
+  top: -100px;
   right: 180px;
   background-color: #4487c6;
 
@@ -28,6 +27,14 @@
 
   &--left {
     right: 510px;
+
+    @include viewport--lg {
+      display: none;
+    }
+  }
+
+  &--admin {
+    right: 370px;
 
     @include viewport--lg {
       display: none;

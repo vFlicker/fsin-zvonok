@@ -5,6 +5,7 @@
 .header-admin__wrapper {
   display: flex;
   align-items: center;
+  padding-left: 14px;
 }
 
 .header-admin__toggle {
@@ -76,13 +77,8 @@
 }
 
 .header-admin__logo {
-  width: 240px;
-  height: 29px;
-
-  @include viewport--sm {
-    width: 185px;
-    height: 22px;
-  }
+  width: 250px;
+  height: 30px;
 }
 
 .header-admin__actions {

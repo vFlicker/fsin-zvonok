@@ -1,0 +1,94 @@
+.content-admin {
+  flex-grow: 1;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.content-admin__header {
+  padding: 45px 62px 0;
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.content-admin__tab {
+  @include reset-btn;
+
+  position: relative;
+  padding: 0 0 21px 0;
+
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+
+  font-family: $font-family--ibm;
+  font-size: 16px;
+  font-weight: 500;
+
+  @include viewport--sm {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  &.content-admin__tab--active {
+    color:#515151;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      margin-top: -1px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #4487c6;
+
+      @include viewport--sm {
+        content: none;
+      }
+    }
+  }
+}
+
+.content-admin__main {
+  display: flex;
+  padding: 36px 60px 100px;
+}
+
+.content-admin__form {
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+.content-admin__row {
+  display: flex;
+}
+
+.content-admin__row .content-admin__text-input {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.content-admin__text-input {
+  flex-grow: 1;
+  margin-bottom: 22px;
+}
+
+.content-admin__textarea-input {
+  margin-bottom: 30px;
+}
+
+.content-admin__checkbox-input {
+  margin-bottom: 40px;
+}
+
+.content-admin__button {
+  width: 100%;
+}

@@ -1,11 +1,13 @@
 const body = document.querySelector('body');
-const navigation = body.querySelector('.main-nav');
+const mainNav = body.querySelector('.main-nav');
 const toggleButton = body.querySelector('.main-nav__toggle');
 
-const toggleButtonClickHandler = (evt) => {
-  evt.preventDefault();
-  navigation.classList.toggle('main-nav--open');
-  body.classList.toggle('scroll-lock');
-};
+if (mainNav) {
+  const toggleButtonClickHandler = (evt) => {
+    evt.preventDefault();
+    mainNav.classList.toggle('main-nav--open');
+    body.classList.toggle('scroll-lock');
+  };
 
-toggleButton.addEventListener('click', toggleButtonClickHandler);
+  toggleButton.addEventListener('click', toggleButtonClickHandler);
+}

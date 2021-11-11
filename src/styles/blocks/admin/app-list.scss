@@ -1,0 +1,27 @@
+.app-list {
+  margin-top: 7px;
+}
+
+.app-item {
+  width: 105px;
+  min-height: 80px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--map {
+    background-color: #4487c6;
+
+  }
+
+  &--calls {
+    background-color: #515151;
+
+  }
+
+  &--contacts {
+    background-color: #f5f5f5;
+  }
+}

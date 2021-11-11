@@ -13,23 +13,22 @@
   <div class="wrapper">
     <header class="header-admin">
       <div class="header-admin__container container">
-        <div class="header-admin__left">
-          <button class="header-admin__toggle">
-            <span class="visually-hidden">Открыть меню</span>
-            <span class="header-admin__toggle-line"></span>
-          </button>
+        <div class="header-admin__wrapper">
+          <button class="header-admin__toggle" type="button" aria-label="Переключатель отображения меню"><span></span></button>
 
-          <img class="header-admin__logo logo" src="./img/logo-dark.svg" alt="ФСИН-Звонок" width="250" height="30">
-        </div>
+          <img class="header-admin__logo" src="./img/logo-dark.svg" alt="ФСИН-Звонок" width="250" height="30">
 
-        <div class="header-admin__right">
-          <a class="header-admin__home" href="./index.html">Открыть сайт</a>
-          <button class="header-admin__button  header-admin__button--question">
-            <span class="visually-hidden">Вопросы</span>
-          </button>
-          <button class="header-admin__button  header-admin__button--close">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
+          <div class="header-admin__actions">
+            <a class="header-admin__link" href="./index.html">Открыть сайт</a>
+
+            <a class="header-admin__button header-admin__button--disabled header-admin__button--question" href="#">
+              <span class="visually-hidden">Вопросы</span>
+            </a>
+
+            <a class="header-admin__button  header-admin__button--close" href="#">
+              <span class="visually-hidden">Закрыть</span>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -39,7 +38,7 @@
         <div class="line-1"></div>
         <div class="line-3 line-3--blue"></div>
 
-        <menu class="admin-menu">
+        <nav class="admin-menu">
           <ul class="admin-menu__list">
             <li class="admin-menu__item">
               <a href="#" class="admin-menu__link">
@@ -142,7 +141,7 @@
               </a>
             </li>
           </ul>
-        </menu>
+        </nav>
 
         <section class="admin__content admin-content">
           <div class="admin-content__header tab-header">

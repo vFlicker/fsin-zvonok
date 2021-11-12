@@ -9,6 +9,10 @@
   background-attachment: fixed;
 
   overflow: hidden;
+
+  @include viewport--lg {
+    overflow: visible;
+  }
 }
 
 .scroll-lock {

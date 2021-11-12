@@ -5,10 +5,7 @@
   position: absolute;
   transform: skew(45deg);
   z-index: 0;
-}
 
-.line-2,
-.line-3 {
   @include viewport--lg {
     display: none;
   }
@@ -20,29 +17,12 @@
   right: 180px;
   background-color: #4487c6;
 
-  @include viewport--lg {
-    right: -150px;
-    top: 263px;
-  }
-
   &--left {
     right: 510px;
-
-    @include viewport--lg {
-      display: none;
-    }
   }
 
   &--admin {
     right: 370px;
-
-    @include viewport--lg {
-      display: none;
-    }
-  }
-
-  @include viewport--sm {
-    display: none;
   }
 }
 
@@ -64,7 +44,7 @@
   right: -700px;
   background-color: #515151;
 
-  &.blue {
+  &--blue {
     background-color: #4487c6;
   }
 }

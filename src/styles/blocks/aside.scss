@@ -5,6 +5,9 @@
   z-index: 2;
 
   @include viewport--lg {
+    position: sticky;
+    bottom: 0;
+
     order: 1;
     flex: 0 0 auto;
     align-items: flex-end;
